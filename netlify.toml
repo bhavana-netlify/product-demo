@@ -8,3 +8,18 @@
   from = "/api/hello/:name"
   to = "/.netlify/functions/hello?name=:name"
   status = 200
+
+[context.production]
+  command = "npm run build"
+  functions = "src/functions"
+  publish = "dist"
+
+
+# Deploy Preview context: all deploys generated from a pull/merge request will
+# inherit these settings.
+[context.deploy-preview]
+  publish = "dist"
+  ACCESS_TOKEN = "not so secret"
+
+  
+
