@@ -1,10 +1,10 @@
 :root {
-  --accent-color: #ddc226;
+  --accent-color: #1d12b8;
   --tint-color: #f0f7fa;
 }
 
 ::selection{
-  background:rgba(0,0,0,0.08);
+  background:rgba(223, 20, 20, 0.08);
 }
 
 
