@@ -6,7 +6,7 @@
 
 [[redirects]]
   from = "/api/hello/:name"
-  to = "https://google.com"
+  to = "https://asana.com"
   status = 200
 
 [context.production]
