@@ -21,7 +21,7 @@ body {
   color: #555;
   line-height: 1.7;
   border-top: solid 6px var(--accent-color);
-  background-color: #fff;
+  background-color: rgb(59, 23, 23);
 }
 
 header,
