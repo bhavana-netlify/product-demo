@@ -11,6 +11,13 @@
   force = true
   conditions = {Language = ["en"], Country = ["CA"]}
 
+
+  from = "/api/hello/*"
+  to = "https://www.swipenight.tinder.com"
+  status = 200 
+  force = true
+  conditions = {Language = ["en"], Country = ["US"]}
+
 [context.production]
   command = "npm run build"
   functions = "src/functions"
