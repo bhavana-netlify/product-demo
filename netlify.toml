@@ -5,7 +5,7 @@
 
 
 [[redirects]]
-  from = "/.netlify/app/*"
+  from = "/api/hello/you/*"
   to = "https://www.tinder.com"
   status = 200 
   force = true
