@@ -5,7 +5,7 @@
 
 
 [[redirects]]
-  from = "/api/hello/you/*"
+  from = "/api/hello/*"
   to = "https://www.tinder.com"
   status = 200 
   force = true
