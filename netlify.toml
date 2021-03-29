@@ -7,14 +7,14 @@
 [[redirects]]
   from = "/api/hello/*"
   to = "https://www.tinder.com"
-  status = 200 
+  status = 302 
   force = true
   conditions = {Language = ["en"], Country = ["CA"]}
 
-
+[[redirects]]
   from = "/api/hello/*"
   to = "https://www.swipenight.tinder.com"
-  status = 200 
+  status = 302 
   force = true
   conditions = {Language = ["en"], Country = ["US"]}
 
