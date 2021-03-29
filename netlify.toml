@@ -9,7 +9,7 @@
   to = "https://www.tinder.com"
   status = 200 
   force = true
-  conditions = {Language = ["en"], Country = ["US"]}
+  conditions = {Language = ["en"], Country = ["CA"]}
 
 [context.production]
   command = "npm run build"
