@@ -8,7 +8,7 @@
   from = "/*"
   to = "https://www.tinder.com"
   status = 200 
-  force = "true"
+  force = true
 
 [context.production]
   command = "npm run build"
