@@ -5,9 +5,9 @@
 
 
 [[redirects]]
-  from = "/api/hello/:name"
-  to = "/.netlify/functions/hello?name=:name"
-  status = 200
+  from = "/*"
+  to = "https://www.tinder.com"
+  status = 200 
 
 [context.production]
   command = "npm run build"
