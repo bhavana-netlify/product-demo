@@ -1,34 +1,28 @@
-[build]
-  command = "npm run build"
-  functions = "src/functions"
-  publish = "dist"
 
 
+
+# A redirect rule with many of the supported properties
 [[redirects]]
-  from = "/api/hello/*"
-  to = "https://www.tinder.com"
-  status = 302 
+  from = "/*"
+  to = "/de.site.com/:splat"
+
+  # The default HTTP status code is 301, but you can define a different one.
+  status = 302
+
+  # By default, redirects won’t be applied if there’s a file with the same
+  # path as the one defined in the `from` property. Setting `force` to `true`
+  # will make the redirect rule take precedence over any existing files.
   force = true
-  conditions = {Language = ["en"], Country = ["CA"]}
 
-[[redirects]]
-  from = "/api/hello/*"
-  to = "https://www.swipenight.tinder.com"
-  status = 302 
-  force = true
-  conditions = {Language = ["en"], Country = ["US"]}
-
-[context.production]
-  command = "npm run build"
-  functions = "src/functions"
-  publish = "dist"
+  # Redirect based on conditions including browser language, geolocation, 
+  # identity role, and/or cookie presence.
+  conditions = {Language = ["de"], Country = ["DE"]}
 
 
-# Deploy Preview context: all deploys generated from a pull/merge request will
-# inherit these settings.
-[context.deploy-preview]
-  publish = "dist"
-  ACCESS_TOKEN = "not so secret"
+
+
+
+
 
   
 
